@@ -1,38 +1,82 @@
-.container{
-  text-align: center;
-  padding: 50px;
-  background-color: white;
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light mode styles */
+.container.light {
+  background-color: #f9f9f9;
+  color: #333;
   min-height: 100vh;
+  padding: 2rem;
+  transition: all 0.3s ease;
 }
 
-.container.dark{
-  background-color:brown;
-  color: blanchedalmond;
+/* Dark mode styles */
+.container.dark {
+  background-color: #1e1e1e;
+  color: #f9f9f9;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: all 0.3s ease;
 }
 
-.btn{
-  margin: 10px;
+/* General button style */
+.btn, .on-btn, .off-btn {
   padding: 10px 20px;
-  font-size: 18px;
-  background-color:burlywood;
-  color: white;
+  margin: 10px 5px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
-.reset{
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color:brown;
+/* Dark/Light Mode Toggle Button */
+.btn {
+  background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 6px;
 }
 
-
-body{
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+.btn:hover {
+  background-color: #0056b3;
 }
 
+/* Toggle content button (on) */
+.on-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.on-btn:hover {
+  background-color: #218838;
+}
+
+/* Toggle content button (off) */
+.off-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.off-btn:hover {
+  background-color: #c82333;
+}
+
+/* Input field */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Responsive text */
+h1, h2, p {
+  margin-bottom: 1rem;
+}

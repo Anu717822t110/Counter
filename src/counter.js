@@ -1,21 +1,23 @@
-import { useState } from "react"
+import { useState } from 'react';
 
 function Counter() {
-    const[count, setCount] = useState(0);
-    
+    const [count,setCount] = useState(0);
+
+
     return (
-            <div>
-            <h2>Count: {count}</h2>
-            <button className="btn" onClick = {() => setCount(count + 1)}>Increment</button>
-            <button className="btn" onClick = {() => setCount(count - 1)}>Decrement</button>
-            <button className="reset" onClick = {() => setCount(0)}>Reset</button>
-        </div>
+       <div>
+       <h2>Count: {count}</h2>
+       <button className="btn" onClick={() => setCount(count+1)}>Increment</button>
+        <button className="btn" onClick={() => setCount(count-1)}>Decrement</button>
+         <button className="btn" onClick={() => setCount(0)}>Reset</button>
+       </div> 
+      
     );
 }
-
-export default Counter;
-
-//useState - hook
+//usestate - hook
 //add state - data that changes over time
-//class - stateful,functional - stateless
-//hooks - special functions that let us hook into react features
+//class - stateful, funtional - stateless
+//funtional components 
+//hook its is a special function that let as hook into react function
+
+export default Counter
